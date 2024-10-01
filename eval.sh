@@ -6,7 +6,7 @@ for task in ${tasks[@]}; do
         --model_name ${model_name} \
         --gold_path ./gold_traj/${task}/graph_eval.json \
         --pred_path ./pred_traj/${task}/${model_name}/graph_eval_two_shot.json\
-        --eval_model /mnt/data/rolnan/models/all-mpnet-base-v2 \
+        --eval_model all-mpnet-base-v2 \
         --eval_output ./eval_result/${model_name}_${task}_graph_eval_two_shot.json \
         --eval_type node \
         --task_type ${task} \
