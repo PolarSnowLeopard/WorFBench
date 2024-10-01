@@ -75,7 +75,7 @@ Evaluation the workflow in the mode of *node* or *graph*
 tasks=(wikihow toolbench toolalpaca lumos alfworld webshop os)
 model_name=your_model_name
 for task in ${tasks[@]}; do
-    Cpython node_eval.py \
+    python node_eval.py \
         --task eval_workflow \
         --model_name ${model_name} \
         --gold_path ./gold_traj/${task}/graph_eval.json \
