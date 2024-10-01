@@ -219,7 +219,7 @@ if __name__ == "__main__":
         "edges": [(0,1),(1,2),(2,3)]
     }
     gt_graph ={'nodes': ['START', 'go to toilet', 'take dishsponge from toilet', 'go to sinkbasin', 'clean dishsponge with sinkbasin', 'go to toilet', 'put dishsponge in/on toilet.', 'END'], 'edges': [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7)]}
-    eval_model = "/mnt/workspace/workgroup/rolnan/model/all-mpnet-base-v2"
+    eval_model = "all-mpnet-base-v2"
     eval_model = SentenceTransformer(eval_model)
     # print(t_eval_plan(pred_graph["nodes"],gt_graph["nodes"],eval_model))
     print(t_eval_nodes(pred_graph,gt_graph,eval_model))
