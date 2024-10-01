@@ -15,13 +15,10 @@ def localLLM(messages,model="gpt-3.5-turbo",temperature=0.5,top_p=1,max_tokens=1
         "top_p": top_p
     }
     try:
-        # 将 Python 对象转换为 JSON 字符串
+
         json_data = json.dumps(data)
-        
-        # 发送 POST 请求
         response = requests.post(url, headers=headers, data=json_data)
         
-        # 检查响应状态码
         if response.status_code == 200:
             response = response.json()
             return response['choices'][0]['message']['content']
