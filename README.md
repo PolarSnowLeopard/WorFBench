@@ -1,5 +1,5 @@
 <h1 align="center"> WorFBench </h1>
-<h3 align="center"> BENCHMARKING AGENTIC WORKFLOW GENERATION </h3>
+<h3 align="center"> Benchmarking Agentic Workflow Generation </h3>
 
 <!-- <p align="center">
   <a href="https://arxiv.org/abs/2401.05268">📄arXiv</a> •
