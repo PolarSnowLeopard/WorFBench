@@ -24,7 +24,7 @@
 
 ## 🌻Acknowledgement
 
-Our code of training module is referenced and adapted from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). And the Dataset is collected from [ToolBench](https://github.com/openbmb/toolbench?tab=readme-ov-file), [ToolAlpaca](https://github.com/tangqiaoyu/ToolAlpaca), [Lumos](https://github.com/allenai/lumos?tab=readme-ov-file), [WikiHow](https://github.com/mahnazkoupaee/WikiHow-Dataset), [Seal-Tools](https://github.com/fairyshine/seal-tools), [Alfworld](https://github.com/alfworld/alfworld), [Webshop](https://github.com/princeton-nlp/WebShop), [IntercodeSql](https://github.com/princeton-nlp/intercode). Our end-to-end evaluation module is based on [IPR](https://github.com/WeiminXiong/IPR),[Stable ToolBench](https://github.com/THUNLP-MT/StableToolBench). Thanks for their great contributions!
+Our code of training module is referenced and adapted from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). And the Dataset is collected from [ToolBench](https://github.com/openbmb/toolbench?tab=readme-ov-file), [ToolAlpaca](https://github.com/tangqiaoyu/ToolAlpaca), [Lumos](https://github.com/allenai/lumos?tab=readme-ov-file), [WikiHow](https://github.com/mahnazkoupaee/WikiHow-Dataset), [Seal-Tools](https://github.com/fairyshine/seal-tools), [Alfworld](https://github.com/alfworld/alfworld), [Webshop](https://github.com/princeton-nlp/WebShop), [IntercodeSql](https://github.com/princeton-nlp/intercode). Our end-to-end evaluation module is based on [IPR](https://github.com/WeiminXiong/IPR), [Stable ToolBench](https://github.com/THUNLP-MT/StableToolBench). Thanks for their great contributions!
 
 
 ## 🌟Overview
