@@ -1,15 +1,15 @@
 <h1 align="center"> WorFBench </h1>
 <h3 align="center"> Benchmarking Agentic Workflow Generation </h3>
 
-<!-- <p align="center">
-  <a href="https://arxiv.org/abs/2401.05268">📄arXiv</a> •
-  <a href="https://huggingface.co/papers/2401.05268">🤗HFPaper</a> •
-  <a href="https://www.zjukg.org/project/AutoAct/">🌐Web</a>
+<p align="center">
+  <a href="https://arxiv.org/abs/2410.07869">📄arXiv</a> •
+  <a href="https://huggingface.co/papers/2410.07869">🤗HFPaper</a> •
+  <a href="https://www.zjukg.org/project/WorFBench/">🌐Web</a>
 </p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/zjunlp/AutoAct) 
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/zjunlp/WorFBench) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![](https://img.shields.io/github/last-commit/zjunlp/AutoAct?color=green)  -->
+![](https://img.shields.io/github/last-commit/zjunlp/WorFBench?color=green) 
 
 ## Table of Contents
 - 🌻[Acknowledgement](#🌻acknowledgement)
@@ -29,7 +29,7 @@ Our code of training module is referenced and adapted from [LLaMA-Factory](https
 
 ## 🌟Overview
 
-Large Language Models (LLMs), with their exceptional ability to handle a wide range of tasks, have driven significant advancements in tackling reasoning and planning tasks, wherein decomposing complex problems into executable workflows is a crucial step in this process. Existing workflow evaluation frameworks either focus solely on holistic performance or suffer from limitations such as restricted scenario coverage, simplistic workflow structures, and lax evaluation standards. To this end, we introduce WorFBench, a unified workflow generation benchmark with multi-faceted scenarios and intricate graph workflow structures. Additionally, we present WorFEval, a systemic evaluation protocol utilizing subsequence and subgraph matching algorithms to accurately quantify the LLM agent's workflow generation capabilities. Through comprehensive evaluations across different types of LLMs, we discover distinct gaps between the sequence planning capabilities and graph planning capabilities of LLM agents, with even GPT-4 exhibiting a gap of around 15%. We also train two open-source models and evaluate their generalization abilities on held-out tasks. Furthermore, we observe that the generated workflows can enhance downstream tasks, enabling them to achieve superior performance with less time during inference.
+Large Language Models (LLMs), with their exceptional ability to handle a wide range of tasks, have driven significant advancements in tackling reasoning and planning tasks, wherein decomposing complex problems into executable workflows is a crucial step in this process. Existing workflow evaluation frameworks either focus solely on holistic performance or suffer from limitations such as restricted scenario coverage, simplistic workflow structures, and lax evaluation standards. To this end, we introduce WorFBench, a unified workflow generation benchmark with multi-faceted scenarios and intricate graph workflow structures. Additionally, we present WorFEval, a systemic evaluation protocol utilizing subsequence and subgraph matching algorithms to accurately quantify the LLM agent's workflow generation capabilities. Through comprehensive evaluations across different types of LLMs, we discover distinct gaps between the sequence planning capabilities and graph planning capabilities of LLM agents, with even GPT-4 exhibiting a gap of around 15%. We also train two open-source models and evaluate their generalization abilities on held-out tasks. Furthermore, we observe that the generated workflows can enhance downstream tasks, enabling them to achieve superior performance with less time during inference. You can download our dataset from [huggingface](https://huggingface.co/collections/zjunlp/worfbench-66fc28b8ac1c8e2672192ea1)!
 
 
 
