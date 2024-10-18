@@ -4,7 +4,8 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2410.07869">📄arXiv</a> •
   <a href="https://huggingface.co/papers/2410.07869">🤗HFPaper</a> •
-  <a href="https://www.zjukg.org/project/WorFBench/">🌐Web</a>
+  <a href="https://www.zjukg.org/project/WorFBench/">🌐Web</a> •
+  <a href="https://huggingface.co/collections/zjunlp/worfbench-66fc28b8ac1c8e2672192ea1">📊Dataset</a>
 </p>
 
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/zjunlp/WorFBench) 
