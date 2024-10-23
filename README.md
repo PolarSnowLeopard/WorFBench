@@ -13,12 +13,14 @@
 ![](https://img.shields.io/github/last-commit/zjunlp/WorFBench?color=green) 
 
 ## Table of Contents
+
 - 🌻[Acknowledgement](#🌻acknowledgement)
 - 🌟[Overview](#🌟overview)
 - 🔧[Installation](#🔧installation)
 - ✏️[Model-Inference](#✏️model-inference)
 - 📝[Workflow-Generation](#📝workflow-generation)
 - 🤔[Workflow-Evaluation](#🤔workflow-evaluation)
+- 🚩[Citation](#🚩citation)
 <!-- - 🎉[Contributors](#🎉contributors) -->
 
 ---
