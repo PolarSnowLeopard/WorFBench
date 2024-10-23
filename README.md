@@ -28,6 +28,7 @@
 Our code of training module is referenced and adapted from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). And the Dataset is collected from [ToolBench](https://github.com/openbmb/toolbench?tab=readme-ov-file), [ToolAlpaca](https://github.com/tangqiaoyu/ToolAlpaca), [Lumos](https://github.com/allenai/lumos?tab=readme-ov-file), [WikiHow](https://github.com/mahnazkoupaee/WikiHow-Dataset), [Seal-Tools](https://github.com/fairyshine/seal-tools), [Alfworld](https://github.com/alfworld/alfworld), [Webshop](https://github.com/princeton-nlp/WebShop), [IntercodeSql](https://github.com/princeton-nlp/intercode). Our end-to-end evaluation module is based on [IPR](https://github.com/WeiminXiong/IPR), [Stable ToolBench](https://github.com/THUNLP-MT/StableToolBench). Thanks for their great contributions!
 
 
+
 ## 🌟Overview
 
 Large Language Models (LLMs), with their exceptional ability to handle a wide range of tasks, have driven significant advancements in tackling reasoning and planning tasks, wherein decomposing complex problems into executable workflows is a crucial step in this process. Existing workflow evaluation frameworks either focus solely on holistic performance or suffer from limitations such as restricted scenario coverage, simplistic workflow structures, and lax evaluation standards. To this end, we introduce WorFBench, a unified workflow generation benchmark with multi-faceted scenarios and intricate graph workflow structures. Additionally, we present WorFEval, a systemic evaluation protocol utilizing subsequence and subgraph matching algorithms to accurately quantify the LLM agent's workflow generation capabilities. Through comprehensive evaluations across different types of LLMs, we discover distinct gaps between the sequence planning capabilities and graph planning capabilities of LLM agents, with even GPT-4 exhibiting a gap of around 15%. We also train two open-source models and evaluate their generalization abilities on held-out tasks. Furthermore, we observe that the generated workflows can enhance downstream tasks, enabling them to achieve superior performance with less time during inference. You can download our dataset from [huggingface](https://huggingface.co/collections/zjunlp/worfbench-66fc28b8ac1c8e2672192ea1)!
@@ -75,7 +76,10 @@ for task in ${tasks[@]}; do
 done
 ```
 
+
+
 ## 🤔Workflow-Evaluation
+
 Evaluation the workflow in the mode of *node* or *graph*
 ```bash
 tasks=(wikihow toolbench toolalpaca lumos alfworld webshop os)
@@ -93,6 +97,22 @@ for task in ${tasks[@]}; do
 
 done
 ```
+
+
+
+## 🚩Citation
+
+If this work is helpful, please kindly cite as:
+
+```bibtex
+@article{qiao2024benchmarking,
+  title={Benchmarking Agentic Workflow Generation},
+  author={Qiao, Shuofei and Fang, Runnan and Qiu, Zhisong and Wang, Xiaobin and Zhang, Ningyu and Jiang, Yong and Xie, Pengjun and Huang, Fei and Chen, Huajun},
+  journal={arXiv preprint arXiv:2410.07869},
+  year={2024}
+}
+```
+
 
 
 <!-- ## 🎉Contributors
