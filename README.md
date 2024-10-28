@@ -14,13 +14,13 @@
 
 ## Table of Contents
 
-- 🌻[Acknowledgement](#🌻acknowledgement)
-- 🌟[Overview](#🌟overview)
-- 🔧[Installation](#🔧installation)
-- ✏️[Model-Inference](#✏️model-inference)
-- 📝[Workflow-Generation](#📝workflow-generation)
-- 🤔[Workflow-Evaluation](#🤔workflow-evaluation)
-- 🚩[Citation](#🚩citation)
+- 🌻[Acknowledgement](#acknowledgement)
+- 🌟[Overview](#overview)
+- 🔧[Installation](#installation)
+- ✏️[Model-Inference](#model-inference)
+- 📝[Workflow-Generation](#workflow-generation)
+- 🤔[Workflow-Evaluation](#workflow-evaluation)
+- 🚩[Citation](#citation)
 <!-- - 🎉[Contributors](#🎉contributors) -->
 
 ---
@@ -35,7 +35,7 @@ Our code of training module is referenced and adapted from [LLaMA-Factory](https
 
 Large Language Models (LLMs), with their exceptional ability to handle a wide range of tasks, have driven significant advancements in tackling reasoning and planning tasks, wherein decomposing complex problems into executable workflows is a crucial step in this process. Existing workflow evaluation frameworks either focus solely on holistic performance or suffer from limitations such as restricted scenario coverage, simplistic workflow structures, and lax evaluation standards. To this end, we introduce WorFBench, a unified workflow generation benchmark with multi-faceted scenarios and intricate graph workflow structures. Additionally, we present WorFEval, a systemic evaluation protocol utilizing subsequence and subgraph matching algorithms to accurately quantify the LLM agent's workflow generation capabilities. Through comprehensive evaluations across different types of LLMs, we discover distinct gaps between the sequence planning capabilities and graph planning capabilities of LLM agents, with even GPT-4 exhibiting a gap of around 15%. We also train two open-source models and evaluate their generalization abilities on held-out tasks. Furthermore, we observe that the generated workflows can enhance downstream tasks, enabling them to achieve superior performance with less time during inference. You can download our dataset from [huggingface](https://huggingface.co/collections/zjunlp/worfbench-66fc28b8ac1c8e2672192ea1)!
 
-
+![](./assets/main_results.jpg)
 
 
 ## 🔧Installation
