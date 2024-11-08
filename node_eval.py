@@ -1,5 +1,6 @@
 import json
 from LLM.localLLM import localLLM
+from LLM.openaiLLM import openaiLLM
 from typing import List
 import argparse
 import os
@@ -7,6 +8,8 @@ import re
 from tqdm import tqdm
 from evaluator.graph_evaluator import t_eval_graph,t_eval_nodes
 from prompts.eval_prompt import two_shot_example as example
+
+USE_OPENAI = True
 
 
 def workflow_to_node_list(workflow: str) -> List[str]:
@@ -99,18 +102,17 @@ def gen_workflow(gold_path:str,pred_path:str,model_name:str,few_shot:bool,task_t
             workflow_list = preded_datas
     else:
         pred_dir = "/".join(pred_path.split("/")[:-1])
-       
-        if not os.path.exists(pred_dir):
-            
-            os.mkdir(pred_dir)
-
+        os.makedirs(pred_dir, exist_ok=True)
         workflow_list = []
-    workflow_list = []
+
     with tqdm(total=len(eval_data)) as pbar:
         for data in eval_data:
             messages = build_message(data['conversations'],few_shot,task_type)
             # print(messages)
-            plan = localLLM(messages=messages,api_port=8000)
+            if USE_OPENAI:
+                plan = openaiLLM(messages=messages,model="gpt-3.5-turbo")
+            else:
+                plan = localLLM(messages=messages)
             workflow_list.append({'query':data,'workflow':plan})
             pbar.update(1)      
             print(plan)
@@ -128,8 +130,7 @@ def eval_workflow(gold_path:str,pred_path:str,eval_model:str, eval_type:str, eva
     sentence_model = SentenceTransformer(eval_model)
 
     eval_output_dir = "/".join(eval_output.split("/")[:-1])
-    if not os.path.exists(eval_output_dir):
-        os.mkdir(eval_output_dir)
+    os.makedirs(eval_output_dir, exist_ok=True)
 
     with open(gold_path,"r") as f:
         gold_data = json.load(f)

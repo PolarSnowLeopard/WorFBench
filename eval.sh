@@ -1,5 +1,7 @@
-tasks=(os)
-model_name=llama3
+# tasks=(os)
+# model_name=llama3
+tasks=(toolbench)
+model_name="gpt-3.5-turbo"
 for task in ${tasks[@]}; do
     CUDA_VISIBLE_DEVICES=0,1,2,3 python node_eval.py \
         --task eval_workflow \
@@ -8,7 +10,7 @@ for task in ${tasks[@]}; do
         --pred_path ./pred_traj/${task}/${model_name}/graph_eval_two_shot.json\
         --eval_model all-mpnet-base-v2 \
         --eval_output ./eval_result/${model_name}_${task}_graph_eval_two_shot.json \
-        --eval_type node \
+        --eval_type graph \
         --task_type ${task} \
         --few_shot \
 

@@ -1,7 +1,7 @@
 sentence_transformers
 openai
 retry
-collections
-itertools
+# collections
+# itertools
 networkx
-re
+# re
