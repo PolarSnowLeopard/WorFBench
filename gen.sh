@@ -1,5 +1,5 @@
-# tasks=(wikihow toolbench toolalpaca lumos alfworld webshop os)
-tasks=(seal_tools)
+tasks=(wikihow toolbench toolalpaca lumos alfworld webshop os)
+# tasks=(seal_tools)
 model_name="gpt-3.5-turbo"
 for task in ${tasks[@]}; do
     python node_eval.py \
